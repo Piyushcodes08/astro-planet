@@ -201,7 +201,7 @@ html, body, #root {
 
 /* The previous planet sits small near top center */
 .planet-scene.prev {
-    transform: translateY(6vh) scale(0.35) translateZ(0);
+    transform: translateY(6vh) scale(0.4) translateZ(0);
     opacity: 0.8;
     z-index: 5;
 }
@@ -300,7 +300,7 @@ html, body, #root {
 ═══════════════════════════════════════════ */
 .top-labels {
   position: fixed;
-  top: 19vh;
+  top: 15vh;
   left: 50%;
   transform: translateX(-50%);
   z-index: 40;
@@ -368,8 +368,11 @@ html, body, #root {
     opacity: 1;
     transform: translate(-50%, 0) translateZ(0);
     pointer-events: auto;
-    max-width: 600px;
-    /* padding-top: 20px; */
+ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px !important;
 }
 
 .mb-type {
@@ -377,13 +380,13 @@ html, body, #root {
     letter-spacing: 12px;
     font-weight: 800;
     text-transform: uppercase;
-    color: #ffffff !important;
+    color: #595959 !important;
 }
 
 .mb-name {
     font-size: 42px;
     letter-spacing: 20px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     color: #fff;
     margin-left: 20px; 
@@ -398,6 +401,7 @@ html, body, #root {
     color: rgb(255, 255, 255);
     margin-bottom: 10px;
     padding: 0 10px;
+    text-align: center;
 }
 
 .mb-more {
@@ -425,8 +429,8 @@ html, body, #root {
 ═══════════════════════════════════════════ */
 @media (min-width: 768px) and (max-width: 1024px) {
   .sidebar { display: none; }
-  .planet-scene.active { transform: translateY(40vh) scale(1.35); }
-  .planet-scene.prev { transform: translateY(-5vh) scale(0.3); }
+  .planet-scene.active { transform: translateY(50vh) scale(1); }
+  .planet-scene.prev { transform: translateY(-5vh) scale(0.4); }
   
   .top-labels { top: 20vh; }
   .main-labels { bottom: 10vh; }
@@ -437,6 +441,14 @@ html, body, #root {
   .mb-desc { font-size: 14px; line-height: 2.2; padding: 0 40px; }
   
   .hdr { top: 25px; transform: translateX(-50%) scale(1); }
+    .planet-sphere{
+    width: 700px;
+    height: 700px;
+  }
+  .planet-shadow-overlay {
+     width: 500px;
+    height: 500px;
+  }
 }
 
 /* ═══════════════════════════════════════════
@@ -450,26 +462,33 @@ html, body, #root {
     transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
                 opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1) !important;
   }
-  
+  .planet-sphere{
+    width: 700px;
+    height: 700px;
+  }
+  .planet-shadow-overlay {
+     width: 500px;
+    height: 500px;
+  }
   /* === Vertical layout: Header > Prev Planet > Active Planet > Info === */
   /* Active planet: anchored in lower half */
-  .planet-scene.active { transform: translateY(28dvh) scale(0.6) translateZ(0); }
+  .planet-scene.active { transform: translateY(38dvh) scale(0.47) translateZ(0); }
   /* Prev planet: compact, sitting near top */
-  .planet-scene.prev  { transform: translateY(-5dvh) scale(0.24) translateZ(0); opacity: 0.85; }
+  .planet-scene.prev  { transform: translateY(5dvh) scale(0.24) translateZ(0); opacity: 0.85; }
   /* Next planet: hidden below, ready to animate in */
   .planet-scene.next  { transform: translateY(90dvh) scale(1.5) translateZ(0); }
 
   /* === Label for prev planet: pinned between header and planet === */
   .top-labels {
     position: fixed;
-    top: 16dvh;
+    top: 26dvh;
     left: 50%;
     transform: translateX(-50%);
   }
   
   /* === Main info block: bottom of screen === */
   .main-labels { bottom: 7dvh; }
-  .main-block.active { max-width: 93vw; }
+  .main-block.active { max-width: 83vw !important; }
   .mb-name  { font-size: 26px; letter-spacing: 10px; margin-left: 10px; }
   .mb-type  { font-size: 13px; letter-spacing: 5px; }
   .mb-desc  { font-size: 13px; line-height: 2.1; padding: 0 8px; margin-top: 4px; }
@@ -555,6 +574,7 @@ html, body, #root {
 
 .details-planet-img {
   width: 70%;
+  height: 100%;
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 50%;

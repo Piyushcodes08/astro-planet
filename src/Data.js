@@ -13,7 +13,7 @@ import mercuryImg from './assets/2k_makemake_fictional.webp'
 export const PLANETS = [
   { 
     id: 'pluto', name: 'Pluto', au: '39.5 AU', color: '#b9a794', img: plutoImg,
-    desc: 'ONCE THE NINTH PLANET, NOW THE LARGEST KNOWN DWARF PLANET. THE NEW HORIZONS MISSION.',
+    desc: 'A small icy dwarf planet, once considered the ninth planet.',
     moons: [{ name: 'CHARON', angle: 210, orbit: 1 }],
     details: [
       { id: '01', title: 'Heart of Pluto', text: 'A massive heart-shaped glacier named Sputnik Planitia is made of nitrogen and methane ice.' },
@@ -23,7 +23,7 @@ export const PLANETS = [
   },
   { 
     id: 'neptune', name: 'Neptune', au: '30.06 AU', color: '#4f83e2', img: neptuneImg, 
-    desc: 'THE WINDIEST PLANET IN THE SOLAR SYSTEM, WITH SUPERSONIC WINDS REACHING 2,100 KM/H. NEPTUNE WAS THE FIRST PLANET FOUND THROUGH MATHEMATICAL.',
+    desc: 'The farthest planet with the fastest winds.',
     moons: [
       { name: 'TRITON', angle: 160, orbit: 1 },
       { name: 'PROTEUS', angle: 50, orbit: 2 },
@@ -37,7 +37,7 @@ export const PLANETS = [
   },
   { 
     id: 'uranus', name: 'Uranus', au: '19.18 AU', color: '#8dcdd8', img: uranusImg,
-    desc: 'THE FIRST PLANET DISCOVERED WITH A TELESCOPE. URANUS HAS AN AXIAL TILT OF 98° — IT ESSENTIALLY ROLLS ALONG ITS ORBITAL PATHT.',
+    desc: 'An ice giant that rotates on its side.',
     moons: [
       { name: 'MIRANDA', angle: 90, orbit: 1 },
       { name: 'ARIEL', angle: 210, orbit: 2 },
@@ -51,7 +51,7 @@ export const PLANETS = [
   },
   { 
     id: 'saturn', name: 'Saturn', au: '9.539 AU', color: '#c9b99a', img:saturnImg,
-    desc: 'FAMOUS FOR ITS STUNNING RING SYSTEM. SATURN IS THE LEAST DENSE PLANET IN THE SOLAR SYSTEM — IT COULD FLOAT ON WATER. .',
+    desc: 'A gas giant known for its beautiful ring system.',
     moons: [
       { name: 'TITAN', angle: 60, orbit: 1 },
       { name: 'ENCELADUS', angle: 300, orbit: 2 },
@@ -65,7 +65,7 @@ export const PLANETS = [
   },
   { 
     id: 'jupiter', name: 'Jupiter', au: '5.203 AU', color: '#c88b3a', img: jupiterImg,
-    desc: 'THE LARGEST PLANET IN THE SOLAR SYSTEM. ITS GREAT RED SPOT IS A STORM LARGER THAN EARTH THAT HAS RAGED R.',
+    desc: 'The largest planet, famous for its giant storms.',
     moons: [
       { name: 'IO', angle: 45, orbit: 1 },
       { name: 'EUROPA', angle: 180, orbit: 2 },
@@ -79,7 +79,7 @@ export const PLANETS = [
   },
   { 
     id: 'mars', name: 'Mars', au: '1.524 AU', color: '#e55f45', img: marsImg,
-    desc: 'FOURTH PLANET FROM THE SUN AND THE SECOND SMALLEST PLANET IN THE SOLAR SYSTEM. NAMED AFTER THE ROMAN GOD ".',
+    desc: 'The Red Planet, a key target for future human missions.',
     moons: [
       { name: 'PHOEBOS', angle: 170, orbit: 2 },
       { name: 'DEIMOS', angle: 350, orbit: 3 }
@@ -92,7 +92,7 @@ export const PLANETS = [
   },
   { 
     id: 'earth', name: 'Earth', au: '1 AU', color: '#26daaa', img: earthImg,
-    desc: 'OUR HOME. THE ONLY PLANET KNOWN TO HARBOUR LIFE. EARTH IS THE DENSEST PLANET IN THE SOLAR SYSTEM, WITH VAST OCEANS COVERING 71% OF.',
+    desc: 'The only known planet that supports life.',
     moons: [
       { name: 'MOON', angle: 260, orbit: 2 }
     ],
@@ -104,7 +104,7 @@ export const PLANETS = [
   },
   { 
     id: 'venus', name: 'Venus', au: '0.723 AU', color: '#e8c46a', img: venusImg,
-    desc: 'THE HOTTEST PLANET IN THE SOLAR SYSTEM DESPITE NOT BEING CLOSEST TO THE SUN. ITS THICK CARBON DIOXIDE ATMOSPHERE CREATES A RUNAWAY GREENHOUSE EFFECT.',
+    desc: 'The hottest planet with a thick, toxic atmosphere.',
     moons: [],
     details: [
       { id: '01', title: 'Greenhouse World', text: 'Venus has a thick, toxic atmosphere that traps heat, making it hotter than Mercury.' },
@@ -114,7 +114,7 @@ export const PLANETS = [
   },
   { 
     id: 'mercury', name: 'Mercury', au: '0.39 AU', color: '#E8927C', img: mercuryImg,
-    desc: 'THE SMALLEST PLANET AND CLOSEST TO THE SUN. A YEAR ON MERCURY LASTS JUST 88 EARTH DAYS, YET A SINGLE SOLAR DAY TAKES 176 EARTH DAYS.',
+    desc: 'The closest and smallest planet to the Sun.',
     moons: [],
     details: [
       { id: '01', title: 'Extreme Temperatures', text: 'Temperatures on Mercury can reach 800°F (430°C) during the day and drop to -290°F (-180°C) at night.' },
