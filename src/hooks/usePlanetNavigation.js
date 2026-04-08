@@ -33,13 +33,12 @@ export function usePlanetNavigation(disabled = false) {
     if (disabled) return;
     let last = 0;
     const fn = (e) => {
-      e.preventDefault();
       const now = Date.now();
       if (now - last < 1200) return;
       last = now;
       go(idxRef.current + (e.deltaY > 0 ? 1 : -1));
     };
-    window.addEventListener('wheel', fn, { passive: false });
+    window.addEventListener('wheel', fn, { passive: true });
     return () => window.removeEventListener('wheel', fn);
   }, [go, disabled]);
 
@@ -69,8 +68,8 @@ export function usePlanetNavigation(disabled = false) {
     };
 
     const handleMove = (e) => {
-      // Prevent native page scroll during planet navigation
-      if (isDragging) e.preventDefault();
+      // Removed e.preventDefault() to allow passive listeners.
+      // We use touch-action: none in CSS instead to prevent scroll.
     };
 
     const handleEnd = (e) => {
@@ -92,7 +91,7 @@ export function usePlanetNavigation(disabled = false) {
     };
 
     window.addEventListener('touchstart', handleStart, { passive: true });
-    window.addEventListener('touchmove', handleMove, { passive: false }); // must be non-passive to preventDefault
+    window.addEventListener('touchmove', handleMove, { passive: true }); 
     window.addEventListener('touchend', handleEnd, { passive: true });
 
     return () => {

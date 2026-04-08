@@ -1,6 +1,18 @@
+import plutoImg from './assets/pluto.webp'
+import neptuneImg from './assets/2k_neptune.webp'
+import uranusImg from './assets/2k_uranus.webp'
+import saturnImg from './assets/2k_saturn.webp'
+import jupiterImg from './assets/2k_jupiter.webp'
+import marsImg from './assets/2k_mars.webp'
+import earthImg from './assets/earth.webp'
+import venusImg from './assets/2k_venus_surface.webp'
+import mercuryImg from './assets/2k_makemake_fictional.webp'
+
+
+
 export const PLANETS = [
   { 
-    id: 'pluto', name: 'Pluto', au: '39.5 AU', color: '#b9a794', img: 'src/assets/pluto.webp',
+    id: 'pluto', name: 'Pluto', au: '39.5 AU', color: '#b9a794', img: plutoImg,
     desc: 'ONCE THE NINTH PLANET, NOW THE LARGEST KNOWN DWARF PLANET. THE NEW HORIZONS MISSION.',
     moons: [{ name: 'CHARON', angle: 210, orbit: 1 }],
     details: [
@@ -10,7 +22,7 @@ export const PLANETS = [
     ]
   },
   { 
-    id: 'neptune', name: 'Neptune', au: '30.06 AU', color: '#4f83e2', img: 'src/assets/2k_neptune.webp', 
+    id: 'neptune', name: 'Neptune', au: '30.06 AU', color: '#4f83e2', img: neptuneImg, 
     desc: 'THE WINDIEST PLANET IN THE SOLAR SYSTEM, WITH SUPERSONIC WINDS REACHING 2,100 KM/H. NEPTUNE WAS THE FIRST PLANET FOUND THROUGH MATHEMATICAL.',
     moons: [
       { name: 'TRITON', angle: 160, orbit: 1 },
@@ -24,7 +36,7 @@ export const PLANETS = [
     ]
   },
   { 
-    id: 'uranus', name: 'Uranus', au: '19.18 AU', color: '#8dcdd8', img: 'src/assets/2k_uranus.webp',
+    id: 'uranus', name: 'Uranus', au: '19.18 AU', color: '#8dcdd8', img: uranusImg,
     desc: 'THE FIRST PLANET DISCOVERED WITH A TELESCOPE. URANUS HAS AN AXIAL TILT OF 98° — IT ESSENTIALLY ROLLS ALONG ITS ORBITAL PATHT.',
     moons: [
       { name: 'MIRANDA', angle: 90, orbit: 1 },
@@ -38,7 +50,7 @@ export const PLANETS = [
     ]
   },
   { 
-    id: 'saturn', name: 'Saturn', au: '9.539 AU', color: '#c9b99a', img: 'src/assets/2k_saturn.webp',
+    id: 'saturn', name: 'Saturn', au: '9.539 AU', color: '#c9b99a', img:saturnImg,
     desc: 'FAMOUS FOR ITS STUNNING RING SYSTEM. SATURN IS THE LEAST DENSE PLANET IN THE SOLAR SYSTEM — IT COULD FLOAT ON WATER. .',
     moons: [
       { name: 'TITAN', angle: 60, orbit: 1 },
@@ -52,7 +64,7 @@ export const PLANETS = [
     ]
   },
   { 
-    id: 'jupiter', name: 'Jupiter', au: '5.203 AU', color: '#c88b3a', img: 'src/assets/2k_jupiter.webp',
+    id: 'jupiter', name: 'Jupiter', au: '5.203 AU', color: '#c88b3a', img: jupiterImg,
     desc: 'THE LARGEST PLANET IN THE SOLAR SYSTEM. ITS GREAT RED SPOT IS A STORM LARGER THAN EARTH THAT HAS RAGED R.',
     moons: [
       { name: 'IO', angle: 45, orbit: 1 },
@@ -66,7 +78,7 @@ export const PLANETS = [
     ]
   },
   { 
-    id: 'mars', name: 'Mars', au: '1.524 AU', color: '#e55f45', img: 'src/assets/2k_mars.webp',
+    id: 'mars', name: 'Mars', au: '1.524 AU', color: '#e55f45', img: marsImg,
     desc: 'FOURTH PLANET FROM THE SUN AND THE SECOND SMALLEST PLANET IN THE SOLAR SYSTEM. NAMED AFTER THE ROMAN GOD ".',
     moons: [
       { name: 'PHOEBOS', angle: 170, orbit: 2 },
@@ -79,7 +91,7 @@ export const PLANETS = [
     ]
   },
   { 
-    id: 'earth', name: 'Earth', au: '1 AU', color: '#26daaa', img: 'src/assets/earth.webp',
+    id: 'earth', name: 'Earth', au: '1 AU', color: '#26daaa', img: earthImg,
     desc: 'OUR HOME. THE ONLY PLANET KNOWN TO HARBOUR LIFE. EARTH IS THE DENSEST PLANET IN THE SOLAR SYSTEM, WITH VAST OCEANS COVERING 71% OF.',
     moons: [
       { name: 'MOON', angle: 260, orbit: 2 }
@@ -91,7 +103,7 @@ export const PLANETS = [
     ]
   },
   { 
-    id: 'venus', name: 'Venus', au: '0.723 AU', color: '#e8c46a', img: 'src/assets/2k_venus_surface.webp',
+    id: 'venus', name: 'Venus', au: '0.723 AU', color: '#e8c46a', img: venusImg,
     desc: 'THE HOTTEST PLANET IN THE SOLAR SYSTEM DESPITE NOT BEING CLOSEST TO THE SUN. ITS THICK CARBON DIOXIDE ATMOSPHERE CREATES A RUNAWAY GREENHOUSE EFFECT.',
     moons: [],
     details: [
@@ -101,7 +113,7 @@ export const PLANETS = [
     ]
   },
   { 
-    id: 'mercury', name: 'Mercury', au: '0.39 AU', color: '#E8927C', img: 'src/assets/2k_makemake_fictional.webp',
+    id: 'mercury', name: 'Mercury', au: '0.39 AU', color: '#E8927C', img: mercuryImg,
     desc: 'THE SMALLEST PLANET AND CLOSEST TO THE SUN. A YEAR ON MERCURY LASTS JUST 88 EARTH DAYS, YET A SINGLE SOLAR DAY TAKES 176 EARTH DAYS.',
     moons: [],
     details: [
