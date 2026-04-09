@@ -259,6 +259,10 @@ html, body, #root {
   }
 }
 
+.planet-scene:not(.active) .planet-sphere {
+  animation-play-state: paused;
+}
+
 @keyframes rotateSphere {
   0% { background-position-x: 0px; }
   100% { background-position-x: 2600px; }

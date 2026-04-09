@@ -6,12 +6,11 @@ export const PlanetScene = React.memo(function PlanetScene({ planets, currentInd
       {planets.map((p, i) => {
         const d = i - currentIndex;
 
-        // ❌ REMOVE hidden DOM (performance boost)
-        if (d < -1 || d > 1) return null;
-
         let stateClass = 'active';
         if (d === -1) stateClass = 'prev';
-        if (d === 1) stateClass = 'next';
+        else if (d === 1) stateClass = 'next';
+        else if (d < -1) stateClass = 'hidden-before';
+        else if (d > 1) stateClass = 'hidden-after';
 
         const sphereStyle = {
           backgroundImage: `url(${p.img})`,
