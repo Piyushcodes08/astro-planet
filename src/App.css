@@ -459,11 +459,11 @@ html, body, #root {
   
   /* === Vertical layout: Header > Prev Planet > Active Planet > Info === */
   /* Active planet: anchored in lower half */
-  .planet-scene.active { transform: translateY(38dvh) scale(0.47) translateZ(0); }
+  .planet-scene.active { transform: translateY(35dvh) scale(0.42) translateZ(0); }
   /* Prev planet: compact, sitting near top */
-  .planet-scene.prev  { transform: translateY(5dvh) scale(0.24) translateZ(0); opacity: 0.85; }
+  .planet-scene.prev  { transform: translateY(5dvh) scale(0.22) translateZ(0); opacity: 0.85; }
   /* Next planet: hidden below, ready to animate in */
-  .planet-scene.next  { transform: translateY(90dvh) scale(1.5) translateZ(0); }
+  .planet-scene.next  { transform: translateY(90dvh) scale(0.22) translateZ(0); opacity: 0; }
 
   /* === Label for prev planet: pinned between header and planet === */
   .top-labels {
