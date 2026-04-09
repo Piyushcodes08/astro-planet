@@ -589,10 +589,7 @@ html, body, #root {
   font-weight: 700;
   margin-bottom: 10px;
   display: inline-block;
-  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.7));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+ color: white;
 }
 
 .details-au {
