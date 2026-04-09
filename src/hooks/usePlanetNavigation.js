@@ -2,9 +2,9 @@ import { useState, useRef, useEffect, useCallback } from 'react';
 import { PLANETS } from '../Data';
 
 export function usePlanetNavigation(disabled = false) {
-  const [idx, setIdx] = useState(5); // Mars default
-  const idxRef = useRef(5);
-  const targetRef = useRef(5);
+  const [idx, setIdx] = useState(0); // Pluto default
+  const idxRef = useRef(0);
+  const targetRef = useRef(0);
   const timerRef = useRef(null);
 
   const go = useCallback((next) => {
